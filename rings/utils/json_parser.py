@@ -1,7 +1,6 @@
 # coding=utf-8
 
 import json
-from  bson.json_util import default, object_hook
 
 
 class JSONParserException(Exception):
@@ -9,10 +8,6 @@ class JSONParserException(Exception):
 
 
 class JSONParser(object):
-    """
-    Common JSON Parser
-    http://api.mongodb.org/python/1.7/api/pymongo/json_util.html
-    """
 
     @staticmethod
     def to_json(collection):
@@ -23,7 +18,7 @@ class JSONParser(object):
         Returns: String
         """
         try:
-            json_str = json.dumps(collection, default=default)
+            json_str = json.dumps(collection)
             return json_str
         except Exception as e:
             raise JSONParserException(e)
@@ -37,7 +32,7 @@ class JSONParser(object):
         Returns: Python Collection
         """
         try:
-            collection = json.loads(json_str, object_hook=object_hook)
+            collection = json.loads(json_str)
             return collection
         except Exception as e:
             raise JSONParserException(e)
