@@ -1,0 +1,13 @@
+#Thu May 23 12:09:49 GMT-03:00 2013
+eclipse.preferences.version=1
+encoding//rings/manage.py=utf-8
+encoding//rings/social/base_handler.py=utf-8
+encoding//rings/social/home.py=utf-8
+encoding//rings/utils/app_ctx.py=utf-8
+encoding//rings/utils/catch_exceptions.py=utf-8
+encoding//rings/utils/json_parser.py=utf-8
+encoding//rings/utils/route.py=utf-8
+encoding//rings/utils/settings_loader.py=utf-8
+encoding/settings.py=utf-8
+encoding/settings_local.py=utf-8
+encoding/settings_prod.py=utf-8
