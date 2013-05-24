@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -30,18 +31,41 @@ ga('send', 'pageview');
       <!--start menu-->
   	   <nav>
          <ul>
-         <li><a href="#" class="current">Home</a></li>
-         <li><a href="#">About us</a></li>
-     	   <li><a href="#">Services</a></li>
-     	   <li><a href="#">Portfolio</a></li>
-         <li><a href="#">News</a></li>
-         <li><a href="#">Contact</a></li>
+         <li><a href="/" class="current">Home</a></li>
+         {% for category in  categories %}
+         	<li><a href="/{{category['url_category_name']}}/{{category['category_id']}}/">{{category['display_category_name']}}</a></li>
+         {% end%}
          </ul>
       </nav>
   	   <!--end menu-->
       <!--end header-->
 	</header>
    <!--start intro-->
+   <div id="fb-root"></div>
+<script>
+  // Additional JS functions here
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'YOUR_APP_ID', // App ID
+      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional init code here
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
    <section id="intro">
       <hgroup>
       <h1>"Simplicity is the ultimate sophistication"<span>- Leonardo da Vinci</span></h1>
