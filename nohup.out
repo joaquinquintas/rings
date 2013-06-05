@@ -1,2 +1,12 @@
-WARNING:root:404 GET /favicon.ico (::1) 0.52ms
-WARNING:root:404 GET /favicon.ico (::1) 1.03ms
+Traceback (most recent call last):
+  File "rings/manage.py", line 60, in <module>
+    start_instance(settings)
+  File "rings/manage.py", line 22, in start_instance
+    http_server.listen(settings["TORNADO"]["port"])
+  File "/usr/lib/python2.7/dist-packages/tornado/netutil.py", line 100, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/usr/lib/python2.7/dist-packages/tornado/netutil.py", line 265, in bind_sockets
+    sock.bind(sockaddr)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
