@@ -68,7 +68,7 @@ class BaseHandler(RequestHandler):
     @property
     def db(self):
             if not hasattr(BaseHandler, "_db"):
-                BaseHandler._db = Connection()
+                BaseHandler._db = Connection().mystats
                 
             return BaseHandler._db
     
