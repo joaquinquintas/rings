@@ -7,3 +7,5 @@ Thumbs.db
 
 
 *.pyc
+*.settings
+*.out
