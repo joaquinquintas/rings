@@ -13,7 +13,7 @@ class IndexHandler(BaseHandler):
         if not user:
             self.render("login.html")
         else:
-            self.render("home.html")
+            self.render("home.html", current_user=user)
 
 @Route('/home/')
 class HomeHandler(BaseHandler):
