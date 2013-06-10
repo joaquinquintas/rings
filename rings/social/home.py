@@ -9,7 +9,11 @@ import requests
 class IndexHandler(BaseHandler):
 
     def get(self):
-        self.render("login.html")
+        user = self.get_current_user()
+        if not user:
+            self.render("login.html")
+        else:
+            self.render("home.html")
 
 @Route('/home/')
 class HomeHandler(BaseHandler):
