@@ -15,15 +15,29 @@ class IndexHandler(BaseHandler):
         else:
             self.render("home.html", current_user=user)
 
-@Route('/home/')
+@Route('/moves/auth/')
 class HomeHandler(BaseHandler):
 
     def get(self):
-        category_url = "http://api.feedzilla.com/v1/categories.json"
-        r = requests.get(category_url)
-            
-        self.render("index.html", categories=r.json())
+        code = self.get_argument('code', None)
+        user = self.get_current_user()
 
+        if not code:
+            error = self.get_argument("error", "")
+            self.db.errors.save({"error": error})
+        else:
+            user["moves_code"] = code
+            self.db.user.save(user)
+        
+        moves_user = requests.get(settings.MOVES_URL%("user/profile", code)).json()
+        user["moves_id"] = moves_user["userId"]
+        user["moves_first_date"] = moves_user["profile"]["firstDate"]
+        self.db.user.save(user)
+        
+        summary_url = "user/summary/daily/%s" %user["moves_first_date"][:6]
+        moves_summary = requests.get(settings.MOVES_URL%(moves_summary, code)).json()
+        self.render("home.html", current_user=user, moves_summary=moves_summary)
+        
 
 @Route('/(?P<category>[-\w]+)/(?P<category_id>[-\w]+)')
 @Route('/(?P<category>[-\w]+)/(?P<category_id>[-\w]+)/')

@@ -42,4 +42,4 @@ FACEBOOK_APP_SECRET = "ec46efe8fb2c382ccfee26b6c6ee5d20"
 
 MOVES_CLIENT_ID = "vyph3myalMFdUp70cBMuPHjyC2NSPjy0"
 MOVES_CLIENT_SECRET = "HsBMHBYRMD7eYiEUuAX9_K23mW80xnkP9wJyQ4N1o4MyN44pzJfEYKd8351207eZ"
-
+MOVES_URL = "https://api.moves-app.com/api/v1/%s?access_token=%s"
