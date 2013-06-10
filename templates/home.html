@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %} {{ escape(current_user["name"]) }}'s home {% end %}
+{% block content %}
+
+<fb:login-button autologoutlink="true"></fb:login-button>
+
+    {% if current_user %}
+      <p><img src='http://graph.facebook.com/{{ current_user["id"] }}/picture?type=square'/></p>
+      <p>Hello, {{ escape(current_user["name"]) }}</p>
+    {% end %}
+    
+{% end %}
