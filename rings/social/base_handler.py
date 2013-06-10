@@ -43,6 +43,7 @@ class BaseHandler(RequestHandler):
     
     def get_current_user(self):
             cookies = dict((n, self.cookies[n].value) for n in self.cookies.keys())
+            self._logger.info(cookies)
             cookie = facebook.get_user_from_cookie(
                 cookies, FACEBOOK_APP_ID, FACEBOOK_APP_SECRET)
             if not cookie:
