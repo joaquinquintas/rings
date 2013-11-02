@@ -5,7 +5,7 @@ from rings.utils.route import Route
 import requests
 
 
-@Route('/')
+@Route('/test')
 class IndexHandler(BaseHandler):
 
     def get(self):
@@ -14,6 +14,14 @@ class IndexHandler(BaseHandler):
             self.render("login.html")
         else:
             self.render("home.html", current_user=user, moves_summary=None)
+
+
+@Route('/')
+class IndexFacebookFeelingHandler(BaseHandler):
+
+    def get(self):
+        self.render("feelings_home.html")
+
 
 @Route('/moves/auth/')
 class HomeHandler(BaseHandler):
