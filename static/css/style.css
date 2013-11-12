@@ -937,7 +937,13 @@
 			height: 100%;
 			background: url('/static/images/overlay.png');
 		}
-	
+
+	#footer-wrapper1
+	{
+		background: #FFA07A url('/static/images/overlay.png');
+		color: #eee;
+		color: rgba(255,255,255,0.5);
+	}
 	#footer-wrapper
 	{
 		background: #282b34 url('/static/images/overlay.png');
@@ -1005,7 +1011,12 @@
 			background: #282b34 url('images/overlay.png');
 			color: #eee;
 		}
-		
+	
+			#footer-wrapper1 .title
+		{
+			background: #FFA07A url('images/overlay.png');
+			color: #eee;
+		}
 		#footer-wrapper header.style1
 		{
 		}
@@ -1073,6 +1084,17 @@
 		.wrapper-style2 .title
 		{
 			background: #fff;
+			color: #484d55;
+		}
+		
+	.wrapper-style4
+	{
+		background: #EEE8AA;
+	}
+	
+		.wrapper-style4 .title
+		{
+			background: #EEE8AA;
 			color: #484d55;
 		}
 	

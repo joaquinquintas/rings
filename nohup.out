@@ -911,3 +911,35 @@ WARNING:root:404 GET /static/css/images/shadow.png (::1) 0.31ms
 WARNING:root:404 GET /static/images/shadow.png (::1) 0.33ms
 WARNING:root:404 GET /static/css/font/fontawesome-webfont.woff?v=4.0.1 (::1) 0.32ms
 WARNING:root:404 GET /static/css/font/fontawesome-webfont.ttf?v=4.0.1 (::1) 0.43ms
+INFO:rings:{'__utma': '111872281.1767155722.1382641638.1382649963.1382724049.4', '__utmz': '111872281.1382641638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'}
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/style.css (::1) 0.30ms
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/skel.min.js (::1) 0.27ms
+WARNING:root:404 GET /static/css/skel-noscript.css (::1) 0.35ms
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/style-desktop.css (::1) 0.22ms
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/style-desktop.css (::1) 0.27ms
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/style.css (::1) 0.19ms
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/skel.min.js (::1) 0.25ms
+WARNING:root:404 GET /static/css/skel-noscript.css (::1) 0.48ms
+WARNING:root:404 GET /static/images/banner.jpg (::1) 0.43ms
+WARNING:root:404 GET /static/css/images/overlay.png (::1) 0.77ms
+WARNING:root:404 GET /static/images/overlay.png (::1) 0.35ms
+WARNING:root:404 GET /static/css/images/shadow.png (::1) 0.32ms
+WARNING:root:404 GET /static/images/shadow.png (::1) 0.29ms
+WARNING:root:404 GET /static/css/font/fontawesome-webfont.woff?v=4.0.1 (::1) 0.31ms
+WARNING:root:404 GET /static/css/font/fontawesome-webfont.ttf?v=4.0.1 (::1) 0.53ms
+INFO:rings:{}
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/style.css (::1) 0.37ms
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/style-desktop.css (::1) 0.36ms
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/skel.min.js (::1) 0.24ms
+WARNING:root:404 GET /static/css/skel-noscript.css (::1) 0.50ms
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/style.css (::1) 0.28ms
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/style-desktop.css (::1) 0.22ms
+WARNING:root:404 GET /Escape%20Velocity%20by%20HTML5%20UP_files/skel.min.js (::1) 0.34ms
+WARNING:root:404 GET /static/css/skel-noscript.css (::1) 0.44ms
+WARNING:root:404 GET /static/css/images/overlay.png (::1) 0.44ms
+WARNING:root:404 GET /static/css/images/shadow.png (::1) 0.35ms
+WARNING:root:404 GET /static/css/font/fontawesome-webfont.woff?v=4.0.1 (::1) 0.40ms
+WARNING:root:404 GET /static/images/banner.jpg (::1) 0.31ms
+WARNING:root:404 GET /static/images/overlay.png (::1) 0.35ms
+WARNING:root:404 GET /static/images/shadow.png (::1) 0.29ms
+WARNING:root:404 GET /static/css/font/fontawesome-webfont.ttf?v=4.0.1 (::1) 0.44ms
